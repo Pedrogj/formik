@@ -35,7 +35,7 @@ export const FormUser = () => {
 
           return errors;
         }}
-        onSubmit={({ resetForm }) => {
+        onSubmit={(values, { resetForm }) => {
           resetForm();
           console.log("Formulario enviado");
           setSendForm(true);
